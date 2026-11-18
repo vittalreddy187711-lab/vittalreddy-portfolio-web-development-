@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G Vittal Reddy — Aspiring Software Developer</title>
+    <meta
+      name="description"
+      content="Personal portfolio website of G Vittal Reddy, 1st Year B.Tech Computer Science and Engineering student at Joy University (in collaboration with NIAT/NxtWave)."
+    />
+    <meta property="og:title" content="G Vittal Reddy — Aspiring Software Developer" />
+    <meta
+      property="og:description"
+      content="B.Tech CSE Student | Python Beginner | Web Development Enthusiast. Explore projects, skills, education, and career goals."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Plus Jakarta Sans (Headings) & DM Sans (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS3 Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Skip Link for Keyboard Accessibility -->
+    <a class="skip-link" href="#home">Skip to main content</a>
+
+    <!-- =========================================================
+         HEADER & NAVIGATION BAR (3-Zone Top Bar, CSS-Only Mobile Menu)
+         ========================================================= -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <!-- Zone 1: Brand Wordmark -->
+        <a href="#home" class="brand-mark">G VITTAL REDDY</a>
+
+        <!-- CSS-Only Mobile Menu Checkbox Toggle (No JavaScript Required) -->
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="nav-toggle-input"
+          aria-label="Toggle navigation menu"
+        />
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </label>
+
+        <!-- Zone 2: Navigation Links -->
+        <nav class="site-nav" aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#goals" class="nav-link">Career Goals</a></li>
+          </ul>
+          <!-- Mobile-only contact shortcut inside drawer -->
+          <a href="#contact" class="btn btn-primary nav-mobile-cta">Contact Me</a>
+        </nav>
+
+        <!-- Zone 3: Primary Header CTA -->
+        <div class="header-cta">
+          <a href="#contact" class="btn btn-primary">Contact Me</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================
+         MAIN CONTENT
+         ========================================================= -->
+    <main>
+      <!-- =======================================================
+           1. HOME / HERO SECTION
+           ======================================================= -->
+      <section id="home" class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <!-- Left Column: Introduction & Calls to Action -->
+            <div class="hero-content">
+              <p class="hero-subtitle">
+                B.Tech CSE Student · Python Beginner · Web Development Enthusiast
+              </p>
+
+              <h1 class="hero-title">
+                G VITTAL REDDY
+                <span class="hero-role">Aspiring Software Developer</span>
+              </h1>
+
+              <p class="hero-description">
+                I am a first-year Computer Science and Engineering undergraduate at Joy University,
+                driven by a genuine curiosity for how software works. I am building a strong
+                foundation in Python, HTML5, CSS3, and structured problem solving as I work toward
+                creating practical, well-crafted applications.
+              </p>
+
+              <!-- Primary & Secondary Action Buttons -->
+              <div class="hero-actions">
+                <!-- Replace the href below with "assets/G_Vittal_Reddy_CV.pdf" when your PDF CV is ready -->
+                <a
+                  href="data:text/plain;charset=utf-8,G%20VITTAL%20REDDY%0AAspiring%20Software%20Developer%0AB.Tech%20CSE%20(1st%20Year)%20%E2%80%93%20Joy%20University%20(NIAT%2FNxtWave)%0AEmail%3A%20vittalreddy187711%40gmail.com%0AGitHub%3A%20https%3A%2F%2Fgithub.com%2Fvittalreddy187711-lab%0ALinkedIn%3A%20https%3A%2F%2Fwww.linkedin.com%2Fin%2Fvittal-reddy-gonchi-476325433%2F%0A%0ASKILLS%0A-%20Python%20(Beginner)%0A-%20HTML5%20%26%20CSS3%0A-%20Basic%20Web%20Development%0A-%20Computer%20Science%20Fundamentals%0A-%20Problem%20Solving%0A%0APROJECTS%0A1.%20Personal%20Portfolio%20Website%20(HTML5%2C%20CSS3)%0A2.%20Python%20Programming%20Projects%20(Python)%0A3.%20Responsive%20Landing%20Page%20(HTML5%2C%20CSS3)"
+                  download="G_Vittal_Reddy_CV.txt"
+                  class="btn btn-primary"
+                >
+                  <svg
+                    class="btn-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </svg>
+                  Download CV
+                </a>
+
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+              </div>
+
+              <!-- Social Links (GitHub & LinkedIn) -->
+              <div class="hero-socials" aria-label="Social media profiles">
+                <a
+                  href="https://github.com/vittalreddy187711-lab"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                >
+                  <svg
+                    class="social-icon"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"
+                    />
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/vittal-reddy-gonchi-476325433/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-link"
+                >
+                  <svg
+                    class="social-icon"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"
+                    />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Column: Professional Profile Photo -->
+            <div class="hero-media">
+              <figure class="profile-frame">
+                <img
+                  src="/assets/aistudio/WhatsApp_Image_2026-11-18_at_2.28.53_PM__1__0fceb129.jpeg"
+                  alt="G Vittal Reddy — B.Tech CSE Student Portrait"
+                  class="profile-image"
+                  referrerpolicy="no-referrer"
+                />
+                <figcaption class="profile-caption">
+                  <span class="caption-name">G Vittal Reddy</span>
+                  <span class="caption-meta">B.Tech CSE · 1st Year · Joy University</span>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Key Academic & Focus Summary Strip Below Hero Split -->
+          <div class="hero-summary-strip" aria-label="Profile overview">
+            <div class="summary-item">
+              <span class="summary-label">Degree Program</span>
+              <strong class="summary-value">B.Tech in CSE</strong>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">University</span>
+              <strong class="summary-value">Joy University</strong>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">Academic Collaboration</span>
+              <strong class="summary-value">NIAT / NxtWave</strong>
+            </div>
+            <div class="summary-item">
+              <span class="summary-label">Current Year</span>
+              <strong class="summary-value">1st Year Undergraduate</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =======================================================
+           2. ABOUT ME SECTION
+           ======================================================= -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">01 · Introduction</p>
+            <h2 class="section-title">About Me</h2>
+          </div>
+
+          <div class="about-layout">
+            <div class="glass-card about-main">
+              <p class="about-lead">
+                Hello, I am <strong>G Vittal Reddy</strong>, a first-year
+                <strong>B.Tech Computer Science and Engineering (CSE)</strong> student at
+                <strong>Joy University</strong>, studying in collaboration with
+                <strong>NIAT / NxtWave</strong>.
+              </p>
+              <p class="about-text">
+                I am deeply passionate about programming and modern technology. Right now, I am
+                actively learning <strong>Python, HTML5, CSS3, and web development</strong>,
+                focusing on writing clean, logical, and maintainable code from day one.
+              </p>
+              <p class="about-text">
+                I enjoy exploring new technologies, developing creative and useful projects, and
+                sharpening my problem-solving skills step by step. My long-term career goal is to
+                grow into a skilled, dependable professional software developer who builds
+                meaningful real-world software.
+              </p>
+            </div>
+
+            <aside class="glass-card about-highlights" aria-label="Core focus areas">
+              <h3 class="card-subtitle">What Drives My Learning</h3>
+              <ul class="clean-list">
+                <li>
+                  <span class="list-heading">Programming &amp; Logic</span>
+                  <span class="list-detail">
+                    Building structured thinking through beginner Python programs and daily coding
+                    practice.
+                  </span>
+                </li>
+                <li>
+                  <span class="list-heading">Clean Web Craft</span>
+                  <span class="list-detail">
+                    Designing responsive, accessible web pages using semantic HTML5 and modern CSS3.
+                  </span>
+                </li>
+                <li>
+                  <span class="list-heading">Continuous Growth</span>
+                  <span class="list-detail">
+                    Preparing steadily for future software engineering internships and real projects.
+                  </span>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- =======================================================
+           3. SKILLS SECTION
+           ======================================================= -->
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">02 · Capabilities</p>
+            <h2 class="section-title">Technical &amp; Core Skills</h2>
+            <p class="section-intro">
+              An honest overview of the technologies and foundational concepts I am currently
+              learning and practicing in my first year.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Skill 1: Python -->
+            <article class="glass-card skill-card">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+              <p class="skill-level">Beginner</p>
+              <h3 class="skill-title">Python</h3>
+              <p class="skill-desc">
+                Learning core syntax, variables, loops, conditionals, functions, and writing
+                structured beginner-level programs.
+              </p>
+            </article>
+
+            <!-- Skill 2: HTML5 -->
+            <article class="glass-card skill-card">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="3" y="4" width="18" height="16" rx="2" />
+                  <line x1="3" y1="9" x2="21" y2="9" />
+                  <line x1="9" y1="20" x2="9" y2="9" />
+                </svg>
+              </div>
+              <p class="skill-level">Foundational</p>
+              <h3 class="skill-title">HTML5</h3>
+              <p class="skill-desc">
+                Structuring clean, accessible, and semantic web documents using modern HTML5
+                landmarks, forms, and media elements.
+              </p>
+            </article>
+
+            <!-- Skill 3: CSS3 -->
+            <article class="glass-card skill-card">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="4" y="4" width="7" height="7" rx="1.5" />
+                  <rect x="13" y="4" width="7" height="7" rx="1.5" />
+                  <rect x="4" y="13" width="7" height="7" rx="1.5" />
+                  <rect x="13" y="13" width="7" height="7" rx="1.5" />
+                </svg>
+              </div>
+              <p class="skill-level">Foundational</p>
+              <h3 class="skill-title">CSS3</h3>
+              <p class="skill-desc">
+                Styling layouts with Flexbox, CSS Grid, custom properties, transitions, and
+                responsive media queries across devices.
+              </p>
+            </article>
+
+            <!-- Skill 4: Basic Web Development -->
+            <article class="glass-card skill-card">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <circle cx="12" cy="12" r="9" />
+                  <line x1="3.6" y1="9" x2="20.4" y2="9" />
+                  <line x1="3.6" y1="15" x2="20.4" y2="15" />
+                  <path d="M12 3a14.5 14.5 0 0 0 0 18" />
+                  <path d="M12 3a14.5 14.5 0 0 1 0 18" />
+                </svg>
+              </div>
+              <p class="skill-level">Learning &amp; Practicing</p>
+              <h3 class="skill-title">Basic Web Development</h3>
+              <p class="skill-desc">
+                Combining structured markup, visual hierarchy, and mobile-friendly layouts to build
+                clean static websites from scratch.
+              </p>
+            </article>
+
+            <!-- Skill 5: Computer Science Fundamentals -->
+            <article class="glass-card skill-card">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="4" y="4" width="16" height="16" rx="2" />
+                  <rect x="9" y="9" width="6" height="6" />
+                  <line x1="9" y1="1" x2="9" y2="4" />
+                  <line x1="15" y1="1" x2="15" y2="4" />
+                  <line x1="9" y1="20" x2="9" y2="23" />
+                  <line x1="15" y1="20" x2="15" y2="23" />
+                  <line x1="20" y1="9" x2="23" y2="9" />
+                  <line x1="20" y1="14" x2="23" y2="14" />
+                  <line x1="1" y1="9" x2="4" y2="9" />
+                  <line x1="1" y1="14" x2="4" y2="14" />
+                </svg>
+              </div>
+              <p class="skill-level">Academic Foundation</p>
+              <h3 class="skill-title">Computer Science Fundamentals</h3>
+              <p class="skill-desc">
+                Studying core engineering concepts, logic building, computational thinking, and
+                foundational programming principles.
+              </p>
+            </article>
+
+            <!-- Skill 6: Problem Solving -->
+            <article class="glass-card skill-card">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M9 18h6" />
+                  <path d="M10 22h4" />
+                  <path d="M12 2a7 7 0 0 0-4 12.7c.7.5 1 1.2 1 2h6c0-.8.3-1.5 1-2A7 7 0 0 0 12 2Z" />
+                </svg>
+              </div>
+              <p class="skill-level">Developing Daily</p>
+              <h3 class="skill-title">Problem Solving</h3>
+              <p class="skill-desc">
+                Breaking down programming exercises into clear steps, debugging errors patiently, and
+                improving logical accuracy.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =======================================================
+           4. PROJECTS SECTION
+           ======================================================= -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">03 · Selected Work</p>
+            <h2 class="section-title">Projects</h2>
+            <p class="section-intro">
+              Foundational academic and self-learning projects created as I build practical fluency
+              in web design and Python programming.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1: Personal Portfolio Website -->
+            <article class="glass-card project-card">
+              <div class="project-media">
+                <!-- Replace src with your own screenshot path, e.g., images/project-portfolio.jpg -->
+                <img
+                  src="/src/assets/images/project_portfolio_grid_1794989907152.jpg"
+                  alt="Preview artwork of Personal Portfolio Website built with HTML5 and CSS3"
+                  class="project-image"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="project-body">
+                <p class="project-tech">HTML5 · CSS3</p>
+                <h3 class="project-title">Personal Portfolio Website</h3>
+                <p class="project-desc">
+                  A personal website designed and built from scratch to showcase my profile,
+                  education, skills, and beginner projects with a responsive dark-navy interface.
+                </p>
+                <div class="project-actions">
+                  <!-- Update href with your specific repository URL once uploaded to GitHub -->
+                  <a
+                    href="https://github.com/vittalreddy187711-lab"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline"
+                  >
+                    View on GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Python Programming Projects -->
+            <article class="glass-card project-card">
+              <div class="project-media">
+                <!-- Replace src with your own screenshot path, e.g., images/project-python.jpg -->
+                <img
+                  src="/src/assets/images/project_python_terminal_1794989888343.jpg"
+                  alt="Preview artwork representing beginner Python programming exercises and logic flow"
+                  class="project-image"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="project-body">
+                <p class="project-tech">Python</p>
+                <h3 class="project-title">Python Programming Projects</h3>
+                <p class="project-desc">
+                  A growing collection of beginner-level Python programs and programming exercises
+                  focused on control flow, loops, functions, and foundational problem solving.
+                </p>
+                <div class="project-actions">
+                  <!-- Update href with your specific repository URL once uploaded to GitHub -->
+                  <a
+                    href="https://github.com/vittalreddy187711-lab"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline"
+                  >
+                    View on GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Responsive Landing Page -->
+            <article class="glass-card project-card">
+              <div class="project-media">
+                <!-- Replace src with your own screenshot path, e.g., images/project-landing.jpg -->
+                <img
+                  src="/src/assets/images/project_responsive_layout_1794989889024.jpg"
+                  alt="Preview artwork of a Responsive Landing Page across desktop, tablet, and mobile layouts"
+                  class="project-image"
+                  referrerpolicy="no-referrer"
+                />
+              </div>
+              <div class="project-body">
+                <p class="project-tech">HTML5 · CSS3</p>
+                <h3 class="project-title">Responsive Landing Page</h3>
+                <p class="project-desc">
+                  A clean, modern webpage crafted with semantic HTML5 and CSS3 Flexbox and Grid
+                  layouts that adapt smoothly across desktop, tablet, and mobile screens.
+                </p>
+                <div class="project-actions">
+                  <!-- Update href with your specific repository URL once uploaded to GitHub -->
+                  <a
+                    href="https://github.com/vittalreddy187711-lab"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline"
+                  >
+                    View on GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =======================================================
+           5. EDUCATION SECTION
+           ======================================================= -->
+      <section id="education" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">04 · Academic Background</p>
+            <h2 class="section-title">Education</h2>
+          </div>
+
+          <div class="education-timeline">
+            <article class="glass-card education-card">
+              <div class="education-top">
+                <div>
+                  <p class="education-status">Currently Pursuing – 1st Year</p>
+                  <h3 class="education-degree">Bachelor of Technology (B.Tech)</h3>
+                  <p class="education-branch">Computer Science and Engineering (CSE)</p>
+                </div>
+                <div class="education-institution-block">
+                  <p class="education-institution">Joy University</p>
+                  <p class="education-collab">Academic Collaboration: NIAT / NxtWave</p>
+                </div>
+              </div>
+
+              <hr class="card-divider" />
+
+              <dl class="education-details">
+                <div class="detail-item">
+                  <dt>Degree</dt>
+                  <dd>Bachelor of Technology (B.Tech)</dd>
+                </div>
+                <div class="detail-item">
+                  <dt>Branch</dt>
+                  <dd>Computer Science and Engineering (CSE)</dd>
+                </div>
+                <div class="detail-item">
+                  <dt>Institution</dt>
+                  <dd>Joy University</dd>
+                </div>
+                <div class="detail-item">
+                  <dt>Academic Collaboration</dt>
+                  <dd>NIAT / NxtWave</dd>
+                </div>
+                <div class="detail-item">
+                  <dt>Current Status</dt>
+                  <dd>Currently Pursuing – 1st Year</dd>
+                </div>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =======================================================
+           6. CAREER GOALS SECTION
+           ======================================================= -->
+      <section id="goals" class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker">05 · Roadmap &amp; Vision</p>
+            <h2 class="section-title">Career Goals</h2>
+            <p class="section-intro">
+              Clear, focused milestones guiding my transition from a first-year computer science
+              student to an industry-ready software developer.
+            </p>
+          </div>
+
+          <ol class="goals-grid">
+            <li class="glass-card goal-card">
+              <span class="goal-index">01</span>
+              <h3 class="goal-title">Become a Professional Software Developer</h3>
+              <p class="goal-desc">
+                Build the engineering discipline, coding clarity, and system understanding required
+                to contribute meaningfully on professional software teams.
+              </p>
+            </li>
+
+            <li class="glass-card goal-card">
+              <span class="goal-index">02</span>
+              <h3 class="goal-title">Improve Programming &amp; Technical Skills</h3>
+              <p class="goal-desc">
+                Strengthen my command over Python, data structures, and core computer science
+                principles through consistent daily coding practice.
+              </p>
+            </li>
+
+            <li class="glass-card goal-card">
+              <span class="goal-index">03</span>
+              <h3 class="goal-title">Build Real-World Projects</h3>
+              <p class="goal-desc">
+                Move beyond classroom exercises by designing and shipping practical projects that
+                solve everyday problems cleanly and reliably.
+              </p>
+            </li>
+
+            <li class="glass-card goal-card">
+              <span class="goal-index">04</span>
+              <h3 class="goal-title">Learn Modern Web Development Technologies</h3>
+              <p class="goal-desc">
+                Expand upon my HTML5 and CSS3 foundation to master interactive frontend and
+                full-stack web technologies step by step.
+              </p>
+            </li>
+
+            <li class="glass-card goal-card">
+              <span class="goal-index">05</span>
+              <h3 class="goal-title">Gain Practical Industry Experience</h3>
+              <p class="goal-desc">
+                Seek internships, open-source collaborations, and mentorship opportunities to learn
+                real software workflows and team engineering standards.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- =======================================================
+           7. CONTACT SECTION
+           ======================================================= -->
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <div class="glass-card contact-panel">
+            <div class="contact-copy">
+              <p class="section-kicker">06 · Get in Touch</p>
+              <h2 class="section-title">Let's Connect</h2>
+              <p class="contact-message">
+                Thank you for visiting my portfolio. I am always eager to connect with fellow
+                students, developers, mentors, and recruiters regarding beginner internships,
+                collaborative learning projects, and software development opportunities.
+              </p>
+
+              <div class="contact-actions">
+                <a
+                  href="mailto:vittalreddy187711@gmail.com?subject=Portfolio%20Inquiry%20%E2%80%93%20G%20Vittal%20Reddy"
+                  class="btn btn-primary"
+                >
+                  <svg
+                    class="btn-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                  </svg>
+                  Send Email
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-links-list" aria-label="Direct contact channels">
+              <a href="mailto:vittalreddy187711@gmail.com" class="contact-item">
+                <span class="contact-item-label">Email</span>
+                <span class="contact-item-value">vittalreddy187711@gmail.com</span>
+              </a>
+
+              <a
+                href="https://github.com/vittalreddy187711-lab"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-item"
+              >
+                <span class="contact-item-label">GitHub</span>
+                <span class="contact-item-value">github.com/vittalreddy187711-lab</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/vittal-reddy-gonchi-476325433/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-item"
+              >
+                <span class="contact-item-label">LinkedIn</span>
+                <span class="contact-item-value">vittal-reddy-gonchi-476325433</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================
+         FOOTER
+         ========================================================= -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-copy">
+          &copy; 2026 G Vittal Reddy · B.Tech CSE Student at Joy University (NIAT / NxtWave)
+        </p>
+        <div class="footer-links">
+          <a href="#home">Top</a>
+          <a href="https://github.com/vittalreddy187711-lab" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/vittal-reddy-gonchi-476325433/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a href="mailto:vittalreddy187711@gmail.com">Email</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
